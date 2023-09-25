@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"rel="stylesheet"/>
+
+      <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"rel="stylesheet"/>
+       
+      <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <title>Document</title>
+
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <!--top-bar-->
+    <header id="top-bar">
+        <!-- Logo -->
+        <div class="logo">
+            <a href="./home.html"><img src="./images/ipl-logo.png"></a>
+        </div>
+        <!--topbar buttons-->
+        <ul class="nav-links">
+            <li><a href="./home.html">Home</a></li>
+           <Li> <button id="addTeamButton" onclick="createTeamForm()">Add Team</button></Li>
+             <li><button id="addPlayer" onclick="createPlayerForm()">Add Player</button></li>
+        </ul>
+   
+    
+
+        <div id="search-wrapper">
+        <input type="text" id="teamSearch" placeholder="Search teams...">
+        <button onclick="searchTeams()">Search</button>
+    </div>
+       
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </header>
+
+    <!--topbar end-->
+
+    <div id="form">
+        <div id="form-container"></div>
+    </div>
+    <section>
+        <div id="card-container">
+            
+        </div>
+</section>
+    <script src="./index.js"></script>   
+</body>
+</html>
